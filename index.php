@@ -9,14 +9,15 @@
 <body>
     <h1>CRUD_MVC</h1>
     <?php
-    //Creamos la variable controller que guardará la petición get.
-    $controller=$_GET['controller'];
-    $action=$_GET['action'];
-
-    
-    if(isset($controller)&&isset($action)){
-
+    //Creamos la variable controller que guardará la petición get. 
+    if(isset($_GET['controller'])&&isset($_GET['action'])){
+        $controller=$_GET['controller'];
+        $action=$_GET['action'];
+    }else{
+        $controller='alumno';
+        $action='index';
     }
+    require_once('views/layouts/layout.php');
     //Comprobar datos:
     echo $controller;
     echo $action;

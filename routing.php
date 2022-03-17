@@ -3,9 +3,9 @@
 $controllers=array(
 
     //$controller ----- $action
-    'alumno' => ['index','show','create','update','delete','error'];
-    'profesor' => ['index','show','create','update','delete','error'];
-    'curso' => ['index','show','create','update','delete','error'];
+    'alumno' => ['index','show','create','update','delete','error'],
+    'profesor' => ['index','show','create','update','delete','error'],
+    'curso' => ['index','show','create','update','delete','error']
 );
 
 //El controlador es el objeto/clase y la acción es el método.
@@ -42,4 +42,4 @@ function call($controller,$action){
 
 
 //Todavía no hemos creado los controllers.
-require_once('controllers/'.$controller.'Controller.php');
+//require_once('controllers/'.$controller.'Controller.php');
