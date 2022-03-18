@@ -4,8 +4,8 @@ $controllers=array(
 
     //$controller ----- $action
     'alumno' => ['index','show','create','save','update','delete','error'],
-    'profesor' => ['index','show','create','update','delete','error'],
-    'curso' => ['index','show','create','update','delete','error']
+    'profesor' => ['index','show','create','save','update','delete','error'],
+    'curso' => ['index','show','create','save','update','delete','error']
 );
 
 //El controlador es el objeto/clase y la acción es el método.

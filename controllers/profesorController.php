@@ -14,14 +14,14 @@ class ProfesorController{
 
     //Resto de métodos. - IMPLEMENTACIÓN DE APIService (CRUD).
     function index(){
-        require_once('Views/profesor/bienvenido.php');
+        require_once('views/profesor/bienvenido.php');
     }
     function registro(){
-        require_once('Views/profesor/register.php');
+        require_once('views/profesor/register.php');
     }
 //Una ApiService: Es una recopilación de métodos.
 
-//Una fomra interesante de consumir una ApiService son las Inyecciones de dependencia (DI). 
+//Una forma interesante de consumir una ApiService son las Inyecciones de dependencia (DI). 
 
 
 

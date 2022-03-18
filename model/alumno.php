@@ -62,7 +62,7 @@ class Alumno{
     public static function save($alumno){
         $conn=Connection::getConnect();
 
-        $insert=$conn->prepare("INSERT INTO alumnos VALUES (null,:nombre,:apellidos,:estado)");
+        $insert=$conn->prepare("INSERT INTO public.alumnos VALUES (default,:nombre,:apellidos,:estado)");
         $insert->bindValue(':nombre',$alumno->getNombre());
         $insert->bindValue(':apellidos',$alumno->getApellidos());
         $insert->bindValue(':estado',$alumno->getEstado());

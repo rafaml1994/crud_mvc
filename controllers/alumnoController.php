@@ -20,7 +20,7 @@ class AlumnoController{
         require_once('Views/alumno/register.php');
     }
     function save(){
-        $alumno= new Alumno(null,'Juan','López',true);
+        $alumno= new Alumno(null,'Perico','López',true);
         Alumno::save($alumno);
     }
 //Una ApiService: Es una recopilación de métodos.

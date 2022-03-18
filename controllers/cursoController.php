@@ -21,7 +21,7 @@ class CursoController{
     }
 //Una ApiService: Es una recopilación de métodos.
 
-//Una fomra interesante de consumir una ApiService son las Inyecciones de dependencia (DI). 
+//Una forma interesante de consumir una ApiService son las Inyecciones de dependencia (DI). 
 
 
 
