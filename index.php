@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,12 @@
 <body>
     <h1>CRUD_MVC</h1>
     <?php
+    //Requirimos la conexión de la Db en el index.
+    
+    require_once('connection.php');
+    
+    //Cabecera 
+
     //Creamos la variable controller que guardará la petición get. 
     if(isset($_GET['controller'])&&isset($_GET['action'])){
         $controller=$_GET['controller'];
